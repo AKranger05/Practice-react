@@ -16,8 +16,8 @@ export function HeroSection({ onViewAll }: HeroSectionProps) {
   }
 
   return (
-    <section className="py-8 md:py-12 px-4 pb-32">
-      <div className="w-full">
+    <section className="py-8 md:py-12 px-4 pb-20 md:pb-24">
+      <div className="max-w-7xl mx-auto">
         {/* Most Popular Badge */}
         <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 bg-persimmon text-white px-5 py-2.5 rounded-full font-semibold shadow-lg">
@@ -85,11 +85,11 @@ export function HeroSection({ onViewAll }: HeroSectionProps) {
           </div>
         </div>
 
-        {/* View All Button - z-index 0 so floating cart (z-5) appears above it */}
-        <div className="flex justify-center relative z-0 mb-24">
+        {/* View All Button - Mobile: no margin, Desktop: snug space for cart button */}
+        <div className="flex justify-center relative z-0 mb-0 md:mb-8">
           <Button
             onClick={() => onViewAll(false)}
-            className="bg-plum-noir hover:bg-plum-noir/90 text-white px-10 py-6 text-lg rounded-xl font-semibold shadow-xl hover:shadow-2xl transition-all"
+            className="bg-plum-noir hover:bg-plum-noir/90 text-white px-8 py-5 text-base md:px-10 md:py-6 md:text-lg rounded-xl font-semibold shadow-xl hover:shadow-2xl transition-all"
           >
             View All Stickers
           </Button>

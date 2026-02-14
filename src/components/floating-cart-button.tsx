@@ -21,14 +21,16 @@ export function FloatingCartButton({ onClick }: FloatingCartButtonProps) {
         type="button"
         onClick={onClick}
         className={cn(
-          "w-auto max-w-lg mx-auto flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-xl pointer-events-auto",
+          // Mobile: small and compact
+          "w-auto max-w-lg mx-auto flex items-center justify-center gap-2 px-4 py-3 rounded-xl pointer-events-auto text-sm",
+          // Desktop: larger and more prominent
+          "md:gap-3 md:px-6 md:py-4 md:text-lg",
           "bg-eco-green text-white shadow-2xl",
-          "hover:bg-eco-green/90 hover:scale-[1.02] transition-all duration-200",
-          "text-sm sm:text-base"
+          "hover:bg-eco-green/90 hover:scale-[1.02] transition-all duration-200"
         )}
         aria-label={`View cart with ${totalItems} items`}
       >
-        <ShoppingCart className="w-4 h-4 sm:w-5 sm:h-5" />
+        <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
         <span className="font-semibold">View Cart ({totalItems} {totalItems === 1 ? 'item' : 'items'})</span>
       </button>
     </div>

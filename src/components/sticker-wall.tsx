@@ -94,7 +94,7 @@ export function StickerWall({ onBack, shouldFocusSearch = false, onSearchFocused
 
   return (
     <section className="py-6 px-4 pb-28">
-      <div className="w-full">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <button
@@ -180,8 +180,8 @@ export function StickerWall({ onBack, shouldFocusSearch = false, onSearchFocused
                     </p>
                   </div>
                   
-                  {/* Sticker Grid */}
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8">
+                  {/* Sticker Grid - Responsive with proper spacing */}
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 md:gap-8">
                     {categoryStickers.map((sticker) => (
                       <div key={sticker.id} className="flex flex-col items-center gap-2">
                         <StickerItem sticker={sticker} size="lg" showQuantityBadge />
