@@ -21,7 +21,7 @@ export function FloatingCartButton({ onClick }: FloatingCartButtonProps) {
         type="button"
         onClick={onClick}
         className={cn(
-          "w-full max-w-lg mx-auto flex items-center justify-center gap-3 px-6 py-4 rounded-xl pointer-events-auto",
+          "w-auto max-w-lg mx-auto flex items-center justify-center gap-3 px-6 py-4 rounded-xl pointer-events-auto",
           "bg-eco-green text-white shadow-2xl",
           "hover:bg-eco-green/90 hover:scale-[1.02] transition-all duration-200"
         )}

@@ -14,7 +14,7 @@ export function Header({ onHistoryClick, onMyStickersClick }: HeaderProps) {
       <div className="w-full px-4 py-6">
         {/* Title - Center Aligned */}
         <div className="text-center mb-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-1">
+          <h1 className="text-2xl md:text-4xl font-bold text-white mb-1">
             MMD Stickers
           </h1>
           <p className="text-champagne-gold text-sm md:text-base">
@@ -23,7 +23,7 @@ export function Header({ onHistoryClick, onMyStickersClick }: HeaderProps) {
         </div>
 
         {/* Action Buttons - Center Aligned */}
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
           {/* My Stickers Button */}
           <Button
             variant="outline"

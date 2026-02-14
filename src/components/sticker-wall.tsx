@@ -94,7 +94,7 @@ export function StickerWall({ onBack, shouldFocusSearch = false, onSearchFocused
 
   return (
     <section className="py-6 px-4 pb-28">
-      <div className="max-w-6xl mx-auto">
+      <div className="w-full">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <button
